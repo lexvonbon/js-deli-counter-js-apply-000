@@ -1,4 +1,4 @@
-let deliLine = [];
+/*let deliLine = [];
 
 const takeANumber = (line, name) => {
   return (`Welcome, ${name}. You are number ${line.push(name)} in line.`);
@@ -22,9 +22,24 @@ const currentLine = (line) => {
   return ("The line is currently empty.");
 };
 
-takeANumber(deliLine, "Joe");
-takeANumber(deliLine, "John");
-takeANumber(deliLine, "Sue");
+*/
+
+// Take A number
+let lineNumbers = [];
+let nextNumber = 1;
+
+function takeANumber() {
+  lineNumbers.push(nextNumber);
+  nextNumber += 1;
+  return (`Welcome! You are number ${nextNumber - 1}.`);
+}
+
+function nowServing() {
+  return (`Now serving ${lineNumbers.shift()}.`);
+}
+
+takeANumber(deliLine);
+takeANumber(deliLine);
+takeANumber(deliLine);
 
 console.log(nowServing(deliLine));
-console.log(currentLine(deliLine));
