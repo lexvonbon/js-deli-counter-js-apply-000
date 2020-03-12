@@ -21,3 +21,10 @@ const currentLine = (line) => {
   }
   return ("The line is currently empty.");
 };
+
+takeANumber(deliLine, "Joe");
+takeANumber(deliLine, "John");
+takeANumber(deliLine, "Sue");
+
+console.log(nowServing(deliLine));
+console.log(currentLine(deliLine));
