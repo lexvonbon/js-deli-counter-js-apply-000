@@ -38,8 +38,8 @@ function nowServing() {
   return (`Now serving ${lineNumbers.shift()}.`);
 }
 
-takeANumber(deliLine);
-takeANumber(deliLine);
-takeANumber(deliLine);
+takeANumber(lineNumbers);
+takeANumber(lineNumbers);
+takeANumber(lineNumbers);
 
-console.log(nowServing(deliLine));
+console.log(nowServing(lineNumbers));
